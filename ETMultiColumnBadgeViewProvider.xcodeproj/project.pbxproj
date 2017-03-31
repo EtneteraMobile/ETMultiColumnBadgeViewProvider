@@ -13,7 +13,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		71B788591E6D47C900F5D235 /* ETMultiColumnCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ETMultiColumnCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B788591E6D47C900F5D235 /* ETMultiColumnBadgeViewProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ETMultiColumnBadgeViewProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CB196A1E8E675F00BB1093 /* BadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		71CB196B1E8E675F00BB1093 /* BadgeViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewProvider.swift; sourceTree = "<group>"; };
 		71CB196D1E8E675F00BB1093 /* ETMultiColumnBadgeViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMultiColumnBadgeViewProvider.h; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		71B7885A1E6D47C900F5D235 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				71B788591E6D47C900F5D235 /* ETMultiColumnCell.framework */,
+				71B788591E6D47C900F5D235 /* ETMultiColumnBadgeViewProvider.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 			);
 			name = "ETMultiColumnBadgeViewProvider iOS";
 			productName = ETMultiColumnCell;
-			productReference = 71B788591E6D47C900F5D235 /* ETMultiColumnCell.framework */;
+			productReference = 71B788591E6D47C900F5D235 /* ETMultiColumnBadgeViewProvider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -257,7 +257,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.etnetera.ETMultiColumnBadgeViewProvider;
-				PRODUCT_NAME = ETMultiColumnCell;
+				PRODUCT_NAME = ETMultiColumnBadgeViewProvider;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -276,7 +276,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.etnetera.ETMultiColumnBadgeViewProvider;
-				PRODUCT_NAME = ETMultiColumnCell;
+				PRODUCT_NAME = ETMultiColumnBadgeViewProvider;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
