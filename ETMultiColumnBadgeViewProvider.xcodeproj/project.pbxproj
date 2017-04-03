@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71207C2E1E922F3300C51AD8 /* ETMultiColumnView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71207C2D1E922F3300C51AD8 /* ETMultiColumnView.framework */; };
 		71CB196F1E8E675F00BB1093 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB196A1E8E675F00BB1093 /* BadgeView.swift */; };
 		71CB19701E8E675F00BB1093 /* BadgeViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CB196B1E8E675F00BB1093 /* BadgeViewProvider.swift */; };
 		71CB19711E8E675F00BB1093 /* ETMultiColumnBadgeViewProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 71CB196D1E8E675F00BB1093 /* ETMultiColumnBadgeViewProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71207C2D1E922F3300C51AD8 /* ETMultiColumnView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ETMultiColumnView.framework; path = Carthage/Build/iOS/ETMultiColumnView.framework; sourceTree = "<group>"; };
 		71B788591E6D47C900F5D235 /* ETMultiColumnBadgeViewProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ETMultiColumnBadgeViewProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71CB196A1E8E675F00BB1093 /* BadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		71CB196B1E8E675F00BB1093 /* BadgeViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewProvider.swift; sourceTree = "<group>"; };
@@ -25,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71207C2E1E922F3300C51AD8 /* ETMultiColumnView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +37,7 @@
 		71B7884F1E6D47C900F5D235 = {
 			isa = PBXGroup;
 			children = (
+				71207C2D1E922F3300C51AD8 /* ETMultiColumnView.framework */,
 				71CB19691E8E675F00BB1093 /* Sources */,
 				71B7885A1E6D47C900F5D235 /* Products */,
 			);
@@ -252,6 +256,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -271,6 +276,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

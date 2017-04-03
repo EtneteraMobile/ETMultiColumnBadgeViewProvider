@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import ETMultiColumnView
 
 // MARK: - BadgeViewProvider
 
 /// Provides implementation of `ViewProvider` that creates `BadgeView` as column.
-public struct BadgeViewProvider {
+public struct BadgeViewProvider: ViewProvider {
 
     // MARK: - Variables
     // MARK: public
