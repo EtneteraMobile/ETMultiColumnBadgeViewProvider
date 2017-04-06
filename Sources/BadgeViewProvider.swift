@@ -54,7 +54,7 @@ public struct BadgeViewProvider: ViewProvider {
         customView.customize(content.text, backgroundColor: content.backgroundColor, textColor: content.textColor)
     }
 
-    public func size(for width: CGFloat) -> CGSize {
+    public func boundingSize(widthConstraint width: CGFloat) -> CGSize {
         return size ?? CGSize(width: width, height: width)
     }
 }
