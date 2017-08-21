@@ -18,7 +18,7 @@ class BadgeView: UIView {
     private lazy var label: UILabel = {
         let l = UILabel()
 
-        l.textAlignment = .Center
+        l.textAlignment = .center
         l.adjustsFontSizeToFitWidth = true
         l.minimumScaleFactor = 0.5
 
@@ -32,7 +32,7 @@ class BadgeView: UIView {
     init(font: UIFont?, textInset inset: CGFloat?) {
         super.init(frame: .zero)
         setup()
-        label.font = font ?? UIFont.boldSystemFontOfSize(10)
+        label.font = font ?? UIFont.boldSystemFont(ofSize: 10)
         if let i = inset {
             textInset = i
         }
@@ -57,7 +57,7 @@ class BadgeView: UIView {
 
     // MARK: - Customize
 
-    func customize(text: String, backgroundColor bg: UIColor, textColor: UIColor) {
+    func customize(_ text: String, backgroundColor bg: UIColor, textColor: UIColor) {
         label.text = text
         backgroundColor = bg
         label.textColor = textColor
