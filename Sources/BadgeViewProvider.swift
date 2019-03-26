@@ -22,7 +22,9 @@ public struct BadgeViewProvider: ViewProvider {
     public var textInset: CGFloat?
 
     public var hashValue: Int {
-        return content.text.hashValue ^ content.backgroundColor.hashValue ^ content.backgroundColor.hashValue
+        var hasher = Hasher()
+        hasher.combine(content.hashValue)
+        return hasher.finalize()
     }
 
     // MARK: private
@@ -63,7 +65,7 @@ public struct BadgeViewProvider: ViewProvider {
 
 public extension BadgeViewProvider {
 
-    public struct Content {
+    struct Content: Hashable {
         let text: String
         let backgroundColor: UIColor
         let textColor: UIColor
